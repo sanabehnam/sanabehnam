@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"
+  <title> my first HTML page! </title>
+  <link type="text/css" rel="stylesheet" href="css/Example18.css">
+  <script src="js/js.js"></script>
+  <script src="js/UFO.js"></script>
+  <script src="js/p5.min.js"></script>
+</head>
+<body>
+  <div class="content-header">
+    <div class="logo">
+        <img src="TheOhioStateUniversity.png"
+             width="250" height="45">
+    </div>
+</div>
+
+<div class="content">
+<!---------------------------------------->
+<h1>
+  First Steps of Learning REACT.JS
+</h1>
+<!----------------------------------------->
+<h3>
+  <ul>
+    <li >
+      Gif hide and show example
+    </li>
+    <li>
+      UFO excercise
+    </li>
+    <li>
+      Pain Tracker excercise
+    </li>
+  </ul>
+</h3>
+
+ <img src="giphy.gif" id = "MYIMG" style = " display:none;" alt="Heart" height="400" width="400">
+ <button type="button" id="myButton1" onclick = "show()">show</button>
+ <button type="button" id="myButton2" onclick = "hide()">hide</button>
+
+ <h2>
+  UFO excercise
+ </h2>
+
+<h3>
+  <blockquote class="pink-color">
+  In this excercise, I started by creating objects with simple elements. <br>
+  My aim was to create some high-level and low level elements.<br>
+  The UFOs Size is a random number bigger than 80 and it is in <br>
+  correlation with its x- location. This variable also affects <br>
+  color of various elements, while influencing number and size of <br>
+  the lights.Furthermore, the location of UFO effects the color of<br>
+  middle bar of UFO. <br>
+</blockquote>
+</h3>
+
+<!-- <a href="UFO.html" target= "_blank"> <img src="UFOIMG.png" height="300"> </a> -->
+<!-- i first used iframe but my friend told me it is not the right way! it doesn't load
+in many pages cause it carries virus -->
+<!-- then styling was a little bit different , it needed container based on
+ https://github.com/processing/p5.js/wiki/Beyond-the-canvas -->
+
+<div id = "ufo"  >
+    <script>
+     setup();
+     draw();
+  </script>
+</div>
+
+<h2>
+ Pain Tracking excercise
+</h2>
+<!-- <a href="PainTracker.html" target= "_blank"> <img src="PainIMG.png" height="300"> </a> -->
+<!-- this would embed the file in the page, the linke to it is here
+ https://github.com/processing/p5.js/wiki/Embedding-p5.js-->
+ <div>
+<iframe src="PainTracker.html" width="1000px" height="620px"></iframe>
+</div>
+
+<p class="author-about">
+<h3>
+  <strong>
+  Interesting resource
+</strong>
+<br>
+</h3>
+<a href="https://www.w3schools.com/" title ="Useful link" target= "_blank" > Absolute URL wich is useful </a>
+</p>
+</div>
+<!----------------------------------->
+
+<p class="footer">
+    <span class="footer-links">
+        Contact
+    </span>
+    <span class="footer-links">
+        Location
+    </span>
+</p>
+
+</body>
+</html>
